@@ -6,4 +6,4 @@
 
 ## MarkDown版本
 
-[做更好的全栈开发者-MarkDown版本](./packages/data/README.md)
+[《做更好的全栈开发者（MarkDown版）》](./packages/data/README.md)
