@@ -15,3 +15,11 @@
 ## 四、数据库部分
 
 具体见[数据库部分目录](./database/README.md)。
+
+## 五、运维部分
+
+具体见[运维部分目录](./maintenance/README.md)。
+
+## 六、软技能部分
+
+具体见[软技能部分目录](./soft/README.md)。
