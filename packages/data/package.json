@@ -4,9 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predev": "rimraf ./dist",
+    "dev": "node ./build/dev.mjs",
+    "prebuild": "rimraf ./dist",
+    "build": "node ./build/build.mjs"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.7",
+    "gulp": "^4.0.2",
+    "gulp-modify-file": "^1.0.1",
+    "rimraf": "^3.0.2"
+  }
 }
