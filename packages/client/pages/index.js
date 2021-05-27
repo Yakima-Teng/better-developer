@@ -1,19 +1,25 @@
 import useSWR from 'swr'
-import Person from '../components/Person'
+import CustomMarkdown from '../components/CustomMarkdown'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export default function Index() {
-  const { data, error } = useSWR('/api/people', fetcher)
+    const {data, error} = useSWR('/api/summary', fetcher)
 
-  if (error) return <div>Failed to load</div>
-  if (!data) return <div>Loading...</div>
+    console.log(data, error)
 
-  return (
-    <ul>
-      {data.map((p, i) => (
-        <Person key={i} person={p} />
-      ))}
-    </ul>
-  )
+    if (error) {
+        return null
+    }
+
+    if (!data) {
+        return null
+    }
+    return (
+        <div>
+            <CustomMarkdown
+                markdown={data.body}
+            />
+        </div>
+    )
 }
