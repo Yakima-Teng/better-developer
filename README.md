@@ -4,7 +4,7 @@
 
 本仓库尚处于开发中。
 
-- MarkDown版本：[《做更好的全栈开发者（MarkDown版）》](./packages/data/README.md)
+- MarkDown版本：[《做更好的全栈开发者（MarkDown版）》](./packages/data/src/README.md)
 
 
 ## 源码地址
